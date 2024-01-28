@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef } from '@angular/core';
-
+import { saveAs } from 'file-saver';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -9,13 +10,14 @@ import { AfterViewInit, Component, ElementRef } from '@angular/core';
 export class HomeComponent implements AfterViewInit {
 
   visible: boolean = false;
-  fileSaver = import('file-saver');
+  descriptionProject !: string;
+  urlProject !: string;
 
 
-
-  constructor(private el: ElementRef) {
+  constructor(private el: ElementRef, private httpClient: HttpClient) {
 
   }
+
 
 
   ngAfterViewInit() {
@@ -37,44 +39,32 @@ export class HomeComponent implements AfterViewInit {
     }
   }
 
-  /*
-    downloadCV(): void {
-      const element = document.querySelector('.view') as HTMLElement; // Elemento a convertir en PDF
-  
-      if (element) {
-        html2canvas(element, { scrollY: -window.scrollY }).then((canvas) => {
-          const imgData = canvas.toDataURL('image/png');
-  
-          // Ajusta el tamaño del PDF al tamaño del lienzo capturado
-          const pdf = new jsPDF('p', 'px', [canvas.width, canvas.height]);
-  
-          // Añade la imagen al PDF
-          pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
-  
-          // Guarda el PDF con un nombre específico
-          pdf.save('Guadalupe_Nicole_Arroyo_portfolio.pdf');
-        });
-      }
-    }*/
 
   downloadCV(): void {
-
     // Ruta relativa al archivo PDF en la carpeta 'assets'
-    const rutaPDF = '/assets/cv.pdf';
+    const rutaPDF = './assets/cv.pdf';
 
-    // Construir la URL completa usando la ubicación del navegador y la ruta relativa
-    const urlPDF = window.location.origin + rutaPDF;
-
-    this.fileSaver.then((module) => {
-      // Ahora puedes usar module.saveAs en lugar de directamente saveAs
-      module.saveAs(urlPDF, 'curriculumGuada.pdf');
+    // Obtén la ruta completa del archivo PDF usando el servicio HttpClient
+    this.httpClient.get(rutaPDF, { responseType: 'blob' }).subscribe((data: Blob) => {
+      // Descargar el archivo usando file-saver
+      saveAs(data, 'Guadalupe Nicole Arroyo CV.pdf');
     });
   }
 
-  showDescription() {
-    throw new Error('Method not implemented.');
-  }
+  showDescription(name : string): void {
+    const project1 = "dimaia";
+    const project2 = "donar";
+    
+    if(name.toLowerCase() === project1.toLowerCase()){
+      this.descriptionProject = project1;
+       this.urlProject = "";
+       this.visible = true;
+    }
 
+
+
+    
+  }
 
 }
 

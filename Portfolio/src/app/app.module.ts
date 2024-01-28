@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { PopupComponent } from './popup/popup.component';
 
 import { ButtonModule } from 'primeng/button';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { ButtonModule } from 'primeng/button';
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

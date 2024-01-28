@@ -1,1 +1,9 @@
-<p>popup works!</p>
+<!-- popup.component.html -->
+<div class="popup-overlay" (click)="closePopup()">
+    <div class="popup-container" (click)="stopPropagation($event)">
+        <!-- Contenido dinámico -->
+        <p>{{ projectDescription }}</p>
+        <iframe width="560" height="315" [src]="projectMediaUrl" frameborder="0" allowfullscreen></iframe>
+        <button (click)="closePopup()">Cerrar</button>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-popup',
@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./popup.component.css']
 })
 export class PopupComponent {
+
+  @Input() projectDescription: string = '';
+  @Input() projectMediaUrl: string = '';
+
+  isOpen = false;
+
+  openPopup() {
+    this.isOpen = true;
+  }
+
+  closePopup() {
+    this.isOpen = false;
+  }
+
+  stopPropagation(event: Event) {
+    event.stopPropagation();
+  }
+
 
 }
