@@ -1,0 +1,167 @@
+<body>
+    <div class="view">
+        <div class="frontPage" id="top-page">
+            <div class="title">
+                <h1>¡Hola! Soy guadalupe, una creativa desarrolladora front-end y diseñadora UI/UX.</h1>
+            </div>
+
+            <div class="photography">
+                <img src="assets/BackgroundPhoto.svg" alt="Descripción de la imagen">
+            </div>
+            <div class="aboutMe">
+                <h3>Perfil</h3>
+
+                <p>Soy una estudiante de sistemas en busqueda de mi primera oportunidad laboral en IT como
+                    desarrolladora frontend. Aunque mi preferencia se inclina al front-end, mi experiencia en backend
+                    complementa mi conjunto de habilidades, permitiendome ofrecer soluciones mas completas y versatiles.
+                </p>
+            </div>
+        </div>
+
+        <div class="buttons-frontPage">
+            <button class="p-button-global" (click)="downloadCV()">Descargar</button>
+
+            <button class="p-button-global" (click)="slowScroll('footer')">Contacto</button>
+
+        </div>
+        <div class="container-sidebar">
+            <div class="menu">
+                <button class="item" style="color: white; background-color: rgb(199 65 143);"
+                    (click)="slowScroll('top-page')">Inicio</button>
+                <button class="item" style="color: white; background-color: rgb(255, 184, 39);"
+                    (click)="slowScroll('project')">Proyectos</button>
+                <button class="item" style="color: white; background-color: rgb(126 49 199);"
+                    (click)="slowScroll('skill')">Habilidades</button>
+                <button class="item" style="color: white; background-color: rgb(30 169 124);"
+                    (click)="slowScroll('education')">Educación</button>
+                <button class="item" style="color: white; background-color: rgb(237, 109, 123);"
+                    (click)="slowScroll('hobbie')">Hobbies</button>
+
+            </div>
+
+        </div>
+
+        <div class="separator">
+            <img src="assets/Separador.svg" alt="Descripción de la imagen">
+
+        </div>
+
+        <div class="projects" id="project">
+            <h3>Proyectos</h3>
+            <div class="container-projects">
+                <div class="dimaia-project">
+                    <img id="spinDimaia-img" src="assets/spinDimaia.svg" alt="spinDimaia" (click)="showDescription()">
+                   <app-popup></app-popup>
+                    <p>DIMAIA</p>
+                </div>
+
+                <!--    <p-button (click)="showDialog()" icon="pi pi-external-link" label="Show"></p-button>
+                        <p-dialog header="Header" [(visible)]="visible" [style]="{width: '50vw'}">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </p-dialog> -->
+
+                <div class="donar-project">
+                    <img id="donar-img" src="assets/Donar.svg" alt="Descripcion">
+                    <P>DONA+</P>
+
+                </div>
+                <div class="stylebus-project" id="styleBus-div">
+                    <img id="styleBus-img" src="assets/StyleBus.svg" alt="Descripcion">
+                    <p>StyleBus</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="separator">
+            <img src="assets/Separador.svg" alt="Descripción de la imagen">
+
+        </div>
+
+        <div class="skills" id="skill">
+            <h3>Habilidades</h3>
+            <div class="container" id="container-skills">
+                <div class="design">
+                    <img src="assets/design.svg" alt="Descripcion">
+                </div>
+                <div class="code">
+                    <img src="assets/code.svg" alt="Descripcion">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="separator">
+            <img src="assets/Separador.svg" alt="Descripción de la imagen">
+
+        </div>
+
+        <div class="education" id="education">
+            <h3>Educación</h3>
+            <div class="container-education">
+                <div class="uiUxDesign">
+                    <p class="subTitle">Diseño Ux/Ui</p>
+                    <p>Agencia de Aprendizaje a lo Largo de la Vida - Ministerio de Educación - GCBA <br> 2023</p>
+                </div>
+                <div class="softSkills">
+                    <p class="subTitle">Habilidades blandas</p>
+                    <p>Agencia de Aprendizaje a lo Largo de la Vida - Ministerio de Educación - GCBA <br> 2023</p>
+                </div>
+                <div class="university">
+                    <p class="subTitle">Licenciatura en sistemas</p>
+                    <p>Universidad Nacional de General Sarmiento <br>
+                        2019 - En curso</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="separator">
+            <img src="assets/Separador.svg" alt="Descripción de la imagen">
+
+        </div>
+
+        <div class="hobbies" id="hobbie">
+            <h3>Hobbies</h3>
+            <div class="container" id="container-hobbies">
+                <div class="draw">
+                    <img src="assets/tableta.svg" alt="Descripcion">
+                    <p>Ilustración <br> y diseño digital</p>
+                </div>
+                <div class="programming">
+                    <img src="assets/baseDatos.svg" alt="Descripcion">
+                    <p>Programación</p>
+
+                </div>
+                <div class="kickboxing">
+                    <img src="assets/guantes.svg" alt="Descripcion">
+                    <p>Kickboxing/Muay Thai</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <footer class="footer" id="footer">
+            <div class="container-footer">
+                <div class="container-links-footer">
+
+                </div>
+
+            </div>
+            <div class="container-social-network-footer">
+
+                <button type="button" class="footerIcon"><i class="pi pi-envelope"></i></button>
+                <button type="button" class="footerIcon"><i class="pi pi-linkedin"></i></button>
+                <button type="button" class="footerIcon"><i class="pi pi-github"></i></button>
+
+            </div>
+        </footer>
+    </div>
+</body>
