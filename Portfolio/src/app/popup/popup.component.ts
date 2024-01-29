@@ -10,7 +10,8 @@ export class PopupComponent {
   @Input() projectDescription: string = '';
   @Input() projectMediaUrl: string = '';
 
-  isOpen = false;
+  isOpen : boolean = false;
+  isVisible: boolean = false;
 
   openPopup() {
     this.isOpen = true;
@@ -20,9 +21,9 @@ export class PopupComponent {
     this.isOpen = false;
   }
 
-  stopPropagation(event: Event) {
+  /*stopPropagation(event: Event) {
     event.stopPropagation();
-  }
+  }*/
 
 
 }

@@ -1,9 +1,8 @@
 <!-- popup.component.html -->
-<div class="popup-overlay" (click)="closePopup()">
-    <div class="popup-container" (click)="stopPropagation($event)">
+<div class="popup-overlay" (visible)="isOpen" [ngStyle]="{'background-image': 'url(../assets/fondoDescrip.png)'}">
+    <div class="popup-container" >
         <!-- Contenido dinámico -->
         <p>{{ projectDescription }}</p>
-        <iframe width="560" height="315" [src]="projectMediaUrl" frameborder="0" allowfullscreen></iframe>
-        <button (click)="closePopup()">Cerrar</button>
+        <!--<iframe width="560" height="315" [src]="projectMediaUrl" frameborder="0" allowfullscreen></iframe>-->
     </div>
 </div>
