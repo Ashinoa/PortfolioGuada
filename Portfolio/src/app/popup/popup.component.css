@@ -4,24 +4,41 @@ div {
   border: 0;
   outline: 0;
   background: transparent;
+
 }
 
 .popup-overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  overflow: auto;
 }
 
+.popup-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.container-popup-opened {
+  z-index: 8030;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+
+}
+
+
+/*---------------------------------------------------------------------------------------*/
 .container-image-popup {
   background: url('/assets/fondoDescrip.png') no-repeat;
   background-size: 100% 100%;
-  width: 649px !important;
+  width: 738px !important; /*649px*/
   min-height: 487px !important;
   overflow: visible !important;
   border: none;
@@ -36,7 +53,8 @@ div {
 }
 
 .popup-container {
-  padding: 134px 110px 0 191px;
+  padding: 140px 110px 0 200px;
+  /*134px 110px 0 191px;*/
   text-align: center;
 
 }
@@ -51,14 +69,14 @@ div {
 }
 
 .image-project {
-  width: 100%;
+  width: 75%;
   height: 100%;
   image-rendering: -webkit-optimize-contrast;
 }
 
 
 .container-description-div1 {
- 
+
   touch-action: auto;
 
   min-height: 160px;
@@ -69,14 +87,14 @@ div {
 
 .container-description-div2 {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   height: 100%;
   max-width: 100%;
   outline: 0;
   direction: ltr;
 }
 
- .container-description-div3 {
+.container-description-div3 {
   margin-right: 0;
   overflow: hidden;
   width: auto;
@@ -92,83 +110,3 @@ p {
   margin-top: 15px;
 
 }
-
-
-
-/*.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
-
-}
-
-.container-image-popup {
-  background-image: url('/assets/fondoDescrip.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  padding: 10vw;
-  margin: 10vw;
-}
-
-.popup-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-
-
-p{
-  color: black;
-  font-family: var(--font-family-all);
-  font-size: var(--font-size-paragraph3);
-  text-align: center;
-}*/
-
-/*
-.popup-overlay {
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.popup-container{
-  background-image: url('/assets/fondoDescrip.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.popup-container p{
-  position:absolute;
-
-}*/
-
-/*background: url(/static/img/new-layout/popup/bg-popup-1.png) no-repeat;
-  background-size: 100% 100%;
-  width: 649px !important;
-  min-height: 487px !important;
-  overflow: visible !important;
-  border: none;
-  position: relative;*/

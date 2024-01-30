@@ -38,16 +38,37 @@
     /*14px*/
 }
 
-html, body {
+html,
+body {
     margin: 0%;
     padding: 0%;
     //Cualquier cosa sacar min-height
     //min-height: 100vh;
     background: #EFEFEF;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos específicos para navegadores basados en Firefox */
+body {
+    scrollbar-width: none;
 }
 
 * {
     font-family: var(--font-family-all);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .p-button-link {
@@ -80,7 +101,12 @@ html, body {
     }
 }
 
-.title1, .title2, .title3, .title4, .title5, .title6 {
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6 {
     font-weight: var(--font-weight-bold);
     color: var(--font-color-dark);
     display: flex;
@@ -89,7 +115,10 @@ html, body {
     margin: 0px;
 }
 
-.paragraph1, .paragraph2,  .paragraph3, .paragraph4 {
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
     font-weight: var(--font-weight-normal);
     color: var(--font-color-dark);
     display: flex;

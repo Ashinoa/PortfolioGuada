@@ -22,7 +22,7 @@ export class HomeComponent implements AfterViewInit, OnInit{
 
 
   constructor(private el: ElementRef, private httpClient: HttpClient) {
-
+    window.scrollTo(0, 0);
   }
 
 
@@ -37,6 +37,8 @@ export class HomeComponent implements AfterViewInit, OnInit{
   ngAfterViewInit() {
     window.scrollTo(0, 0);
   }
+
+  
 
   slowScroll(id: any): void {
     const sectionElement = document.getElementById(id);
@@ -80,11 +82,13 @@ export class HomeComponent implements AfterViewInit, OnInit{
       this.urlProject = this.stylebusProject.image;
       this.popupVisible = true;
     }
-
-
-
     
   }
+
+
+
+
+  
 
 }
 

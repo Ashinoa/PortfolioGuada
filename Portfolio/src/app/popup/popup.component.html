@@ -1,24 +1,27 @@
 <!-- popup.component.html -->
-<div class="popup-overlay" *ngIf="visible" (click)="closePopup()">
-    <div class="container-image-popup" style="overflow: auto; width: 581px; height: 487px;">
-        <div class="popup-container" (click)="stopPropagation($event)">
-
-            <div class="container-projectImage">
-                <img class="image-project" width="90vw" height="90vw" [src]="projectMediaUrl">
-            </div>
-
-            <div class="container-description-div1" style="height: 10vw; position: relative;overflow: visible;width: 30vw;">
-                <div class="container-description-div2" style="max-height: none;" tabindex="0">
-                    <div class="container-description-div3" style="position:relative; top:0; left:0;" dir="ltr">
-                        <p>{{ projectDescription }}</p>
-
+<div class="popup-overlay popup-overlay-fixed" *ngIf="visible" (click)="closePopup()" style="width: auto; height: auto; background: rgba(0, 0, 0, 0.8); display: block;">
+    <div class="container-popup-opened" tabindex="-1" style="width: 670px; height: auto;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; overflow: visible;" (click)="stopPropagation($event)">
+        <div class="container-image-popup" style="overflow: auto; width: 581px; height: 487px;">
+            <div class="popup-container" >
+    
+                <div class="container-projectImage">
+                    <img class="image-project" width="90vw" height="90vw" [src]="projectMediaUrl">
+                </div>
+    
+                <div class="container-description-div1" style="height: 160px; position: relative; overflow: visible;">
+                    <div class="container-description-div2" style="max-height: none;" tabindex="0">
+                        <div class="container-description-div3" style="position:relative; top:0; left:0;" dir="ltr">
+                            <p>{{ projectDescription }}</p>
+    
+                        </div>
                     </div>
                 </div>
+                
+              
             </div>
-            
-          
         </div>
     </div>
+   
 
 
 </div>
