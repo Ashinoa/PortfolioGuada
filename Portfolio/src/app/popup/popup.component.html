@@ -1,8 +1,24 @@
 <!-- popup.component.html -->
-<div class="popup-overlay" (visible)="isOpen" [ngStyle]="{'background-image': 'url(../assets/fondoDescrip.png)'}">
-    <div class="popup-container" >
-        <!-- Contenido dinámico -->
-        <p>{{ projectDescription }}</p>
-        <!--<iframe width="560" height="315" [src]="projectMediaUrl" frameborder="0" allowfullscreen></iframe>-->
+<div class="popup-overlay" *ngIf="visible" (click)="closePopup()">
+    <div class="container-image-popup" style="overflow: auto; width: 581px; height: 487px;">
+        <div class="popup-container" (click)="stopPropagation($event)">
+
+            <div class="container-projectImage">
+                <img class="image-project" width="90vw" height="90vw" [src]="projectMediaUrl">
+            </div>
+
+            <div class="container-description-div1" style="height: 10vw; position: relative;overflow: visible;width: 30vw;">
+                <div class="container-description-div2" style="max-height: none;" tabindex="0">
+                    <div class="container-description-div3" style="position:relative; top:0; left:0;" dir="ltr">
+                        <p>{{ projectDescription }}</p>
+
+                    </div>
+                </div>
+            </div>
+            
+          
+        </div>
     </div>
+
+
 </div>

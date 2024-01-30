@@ -46,8 +46,11 @@
 
         </div>
 
-        <app-popup *ngIf="visible"
+        <app-popup
         [projectDescription]="descriptionProject"
+        [projectMediaUrl]="urlProject"
+        [visible]="popupVisible"
+        (visibleChange)="popupVisible = $event"
         #popup
       ></app-popup>
 
@@ -61,12 +64,12 @@
 
 
                 <div class="donar-project">
-                    <img id="donar-img" src="assets/Donar.svg" alt="Descripcion">
+                    <img id="donar-img" src="assets/Donar.svg" alt="Descripcion" (click)="showDescription('donar')">
                     <P>DONA+</P>
 
                 </div>
                 <div class="stylebus-project" id="styleBus-div">
-                    <img id="styleBus-img" src="assets/StyleBus.svg" alt="Descripcion">
+                    <img id="styleBus-img" src="assets/StyleBus.svg" alt="Descripcion" (click)="showDescription('styebus')">
                     <p>StyleBus</p>
                 </div>
 

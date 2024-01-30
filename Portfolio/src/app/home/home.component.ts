@@ -1,21 +1,35 @@
-import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
 import { saveAs } from 'file-saver';
 import { HttpClient } from '@angular/common/http';
+import { Dimaia } from '../models/Dimaia';
+import { Stylebus } from '../models/Stylebus';
+import { Donar } from '../models/Donar';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements AfterViewInit, OnInit{
 
-  visible: boolean = false;
+  popupVisible: boolean = false;
   descriptionProject !: string;
   urlProject !: string;
+
+  dimaiaProject!: Dimaia;
+  donarProject !: Donar;
+  stylebusProject !: Stylebus;
 
 
   constructor(private el: ElementRef, private httpClient: HttpClient) {
 
+  }
+
+
+  ngOnInit(): void {
+    this.dimaiaProject = new Dimaia();
+    this.donarProject = new Donar();
+    this.stylebusProject = new Stylebus();
   }
 
 
@@ -52,13 +66,19 @@ export class HomeComponent implements AfterViewInit {
   }
 
   showDescription(name : string): void {
-    const project1 = "dimaia";
-    const project2 = "donar";
     
-    if(name.toLowerCase() === project1.toLowerCase()){
-      this.descriptionProject = project1;
-       this.urlProject = "";
-       this.visible = true;
+    if(name.toLowerCase() === this.dimaiaProject.name.toLowerCase()){
+      this.descriptionProject = this.dimaiaProject.description;
+       this.urlProject = this.dimaiaProject.image;
+       this.popupVisible = true;
+    }else if(name.toLowerCase() === this.donarProject.name.toLowerCase()){
+      this.descriptionProject = this.donarProject.description;
+       this.urlProject = this.donarProject.image;
+       this.popupVisible = true;
+    }else if(name.toLowerCase() === this.stylebusProject.name.toLowerCase()){
+      this.descriptionProject = this.stylebusProject.description;
+      this.urlProject = this.stylebusProject.image;
+      this.popupVisible = true;
     }
 
 

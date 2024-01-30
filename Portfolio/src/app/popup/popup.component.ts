@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-popup',
@@ -12,18 +12,17 @@ export class PopupComponent {
 
   isOpen : boolean = false;
   isVisible: boolean = false;
-
-  openPopup() {
-    this.isOpen = true;
-  }
+  @Input() visible: boolean = false;  // Propiedad que indica si el popup está visible
+  @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();  // Evento para notificar cambios en la visibilidad
 
   closePopup() {
-    this.isOpen = false;
+    this.visible = false;
+    this.visibleChange.emit(this.visible);  // Emite el evento para notificar el cambio en la visibilidad
   }
 
-  /*stopPropagation(event: Event) {
+  stopPropagation(event: Event) {
     event.stopPropagation();
-  }*/
+  }
 
-
+  
 }
