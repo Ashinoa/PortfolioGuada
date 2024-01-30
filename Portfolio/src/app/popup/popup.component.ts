@@ -7,6 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class PopupComponent {
 
+  @Input() projectName: string = '';
   @Input() projectDescription: string = '';
   @Input() projectMediaUrl: string = '';
 

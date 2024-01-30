@@ -2,7 +2,7 @@
     <div class="view">
         <div class="frontPage" id="top-page">
             <div class="title">
-                <h1>¡Hola! Soy guadalupe, una creativa desarrolladora front-end y diseñadora UI/UX</h1>
+                <h1>¡Hola! Soy Guadalupe, desarrolladora front-end y diseñadora UI/UX</h1>
             </div>
 
             <div class="photography">
@@ -47,6 +47,7 @@
         </div>
 
         <app-popup
+        [projectName]="projectName"
         [projectDescription]="descriptionProject"
         [projectMediaUrl]="urlProject"
         [visible]="popupVisible"
@@ -69,7 +70,7 @@
 
                 </div>
                 <div class="stylebus-project" id="styleBus-div">
-                    <img id="styleBus-img" src="assets/StyleBus.svg" alt="Descripcion" (click)="showDescription('styebus')">
+                    <img id="styleBus-img" src="assets/StyleBus.svg" alt="Descripcion" (click)="showDescription('stylebus')">
                     <p>StyleBus</p>
                 </div>
 
@@ -165,4 +166,7 @@
             </div>
         </footer>
     </div>
+
+    
+
 </body>

@@ -1,7 +1,7 @@
 export class Stylebus {
     constructor(
-        public name: string = 'Stylebus',
+        public name: string = 'STYLEBUS',
         public description : string = 'Proyecto de la universidad donde ',
-        public image: string = '../assets/StyleBus.svg',
+        public image: string = './assets/StyleBus.svg',
     ) { }
 }
