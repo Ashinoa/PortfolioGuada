@@ -11,13 +11,26 @@ import { PopupComponent } from './popup/popup.component';
 
 import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
+import { HobbiesComponent } from './components/hobbies/hobbies.component';
+import { EducationComponent } from './components/education/education.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { StartComponent } from './components/start/start.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PopupComponent
+    PopupComponent,
+    FooterComponent,
+    HobbiesComponent,
+    EducationComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    StartComponent
   ],
   imports: [
     BrowserAnimationsModule,

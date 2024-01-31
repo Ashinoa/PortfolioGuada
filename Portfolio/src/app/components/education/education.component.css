@@ -1,0 +1,35 @@
+
+.education {
+    margin: 5vw 5vw 15vw 5vw;
+}
+
+.container-education {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 5vw;
+}
+
+.container-education div {
+    margin: 2vw;
+}
+
+.container-education p {
+    font-size: var(--font-size-title6);
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.container-education .subTitle {
+    font-size: var(--font-size-title3);
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}

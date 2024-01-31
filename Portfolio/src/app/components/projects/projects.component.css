@@ -1,0 +1,68 @@
+.projects {
+    margin: 8vw 5vw 10vw 5vw;
+}
+
+.container-projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.container-projects div {
+    padding: 2vw 8vw 2vw 8vw;
+    margin: 2vw;
+}
+
+.projects .container-projects img {
+    height: 15vw;
+    width: 15vw;
+    min-width: 300px;
+    min-height: 250px;
+    max-width: 900px;
+    max-height: 800px;
+    transition: transform 0.3s ease-out;
+}
+
+.container-projects p {
+    font-size: var(--font-size-title3);
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    font-weight: bold;
+    margin: 2vw 0 0 0;
+}
+
+
+#spinDimaia-img{
+    background: var(--gradient-pink);
+    border-radius: 250px;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    min-height: 200px;
+   
+}
+
+#spinDimaia-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#styleBus-img {
+    height: auto;
+    width: auto;
+    min-height: auto;
+}
+
+#styleBus-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#donar-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

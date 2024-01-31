@@ -1,0 +1,24 @@
+<div class="projects" id="project">
+    <h3>Proyectos</h3>
+    <div class="container-projects">
+        <div class="dimaia-project">
+            <img id="spinDimaia-img" src="assets/spinDimaia.svg" alt="spinDimaia" (click)="showDescription('dimaia')">
+            <p>DIMAIA</p>
+        </div>
+
+
+        <div class="donar-project">
+            <img id="donar-img" src="assets/Donar.svg" alt="Descripcion" (click)="showDescription('donar')">
+            <P>DONA+</P>
+
+        </div>
+        <div class="stylebus-project" id="styleBus-div">
+            <img id="styleBus-img" src="assets/StyleBus.svg" alt="Descripcion" (click)="showDescription('stylebus')">
+            <p>StyleBus</p>
+        </div>
+
+    </div>
+</div>
+
+<app-popup [projectName]="projectName" [projectDescription]="descriptionProject" [projectMediaUrl]="urlProject"
+    [visible]="popupVisible" (visibleChange)="popupVisible = $event" #popup></app-popup>
