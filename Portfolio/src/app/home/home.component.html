@@ -1,37 +1,16 @@
 <body>
     <div class="view">
         
-        <app-start class="start" id="top-page"></app-start>
-
-        <div class="buttons-frontPage">
-            <button class="p-button-global" (click)="downloadCV()">Descargar</button>
-
-            <button class="p-button-global" (click)="slowScroll('footer')">Contacto</button>
-
-        </div>
-        <div class="container-sidebar">
-            <div class="menu">
-                <button class="item" style="color: white; background-color: rgb(199 65 143);"
-                    (click)="slowScroll('top-page')">Inicio</button>
-                <button class="item" style="color: white; background-color: rgb(255, 184, 39);"
-                    (click)="slowScroll('project')">Proyectos</button>
-                <button class="item" style="color: white; background-color: rgb(126 49 199);"
-                    (click)="slowScroll('skill')">Habilidades</button>
-                <button class="item" style="color: white; background-color: rgb(30 169 124);"
-                    (click)="slowScroll('education')">Educación</button>
-                <button class="item" style="color: white; background-color: rgb(237, 109, 123);"
-                    (click)="slowScroll('hobbie')">Hobbies</button>
-
-            </div>
-
-        </div>
+        <app-start id="start"></app-start>
+        
+        <app-sidebar></app-sidebar>
 
         <div class="separator">
             <img src="assets/Separador.svg" alt="Descripción de la imagen">
 
         </div>
 
-        <app-projects class="projects" id="project"></app-projects>
+        <app-projects class="project" id="projects"></app-projects>
        
 
         <div class="separator">
@@ -39,7 +18,7 @@
 
         </div>
 
-        <app-skills class="skills" id="skill"></app-skills>
+        <app-skills class="skill" id="skills"></app-skills>
 
         <div class="separator">
             <img src="assets/Separador.svg" alt="Descripción de la imagen">
@@ -53,7 +32,7 @@
 
         </div>
 
-        <app-hobbies class="hobbies" id="hobbie"></app-hobbies>
+        <app-hobbies class="hobbie" id="hobbies"></app-hobbies>
 
 
         <app-footer class="footer" id="footer"></app-footer>

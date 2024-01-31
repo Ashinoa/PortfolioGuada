@@ -10,10 +10,11 @@ export class PopupComponent {
   @Input() projectName: string = '';
   @Input() projectDescription: string = '';
   @Input() projectMediaUrl: string = '';
+  @Input() visible: boolean = false;  // Propiedad que indica si el popup está visible
 
   isOpen : boolean = false;
   isVisible: boolean = false;
-  @Input() visible: boolean = false;  // Propiedad que indica si el popup está visible
+
   @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();  // Evento para notificar cambios en la visibilidad
 
   closePopup() {

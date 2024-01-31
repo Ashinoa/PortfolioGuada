@@ -8,6 +8,7 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { StartComponent } from './components/start/start.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, //con esto se muestra lo que hay en el componente "home"
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'skills', component: SkillsComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'start', component: StartComponent},
+  {path: 'sidebar', component: SidebarComponent}
 
 ];
 

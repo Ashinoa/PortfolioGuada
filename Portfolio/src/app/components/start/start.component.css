@@ -46,3 +46,11 @@
     padding: 0 5vw 0 5vw;
     margin: 0 0 2vw 0;
 }
+
+.buttons-frontPage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+    margin: 5vw 5vw 3vw 5vw;
+}

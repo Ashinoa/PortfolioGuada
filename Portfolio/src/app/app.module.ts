@@ -17,6 +17,7 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { StartComponent } from './components/start/start.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 
@@ -30,7 +31,8 @@ import { StartComponent } from './components/start/start.component';
     EducationComponent,
     SkillsComponent,
     ProjectsComponent,
-    StartComponent
+    StartComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserAnimationsModule,

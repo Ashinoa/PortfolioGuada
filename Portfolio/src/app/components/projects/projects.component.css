@@ -51,12 +51,6 @@
     cursor: pointer;
 }
 
-#styleBus-img {
-    height: auto;
-    width: auto;
-    min-height: auto;
-}
-
 #styleBus-img:hover{
     transform: scale(1.1);
     cursor: pointer;
