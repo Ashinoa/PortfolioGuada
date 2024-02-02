@@ -5,7 +5,11 @@
             <div class="popup-container" >
     
                 <div class="container-projectImage">
-                    <img class="image-project" width="90vw" height="90vw" [src]="projectMediaUrl">
+                    <!--<img class="image-project" width="90vw" height="90vw" [src]="projectMediaUrl">-->
+                    <video class="image-project" autoplay muted loop controlsList="nodownload">>
+                        <source [src]="projectMediaUrl" type="video/mp4">
+                        <!--Cargar video-->
+                    </video>
                 </div>
                 
                 <div class="container-description-div1" style="height: 160px; position: relative; overflow: visible;">

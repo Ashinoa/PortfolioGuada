@@ -37,7 +37,7 @@
     --font-size-link: 0.875rem;
     /*14px*/
 }
-
+/*42561324*/
 html,
 body {
     margin: 0%;
@@ -48,6 +48,7 @@ body {
     overflow-y: scroll;
     scrollbar-width: none;
     scrollbar-color: transparent transparent;
+    min-width: 300px;
 }
 
 body::-webkit-scrollbar {
@@ -69,6 +70,7 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+
 }
 
 
@@ -78,7 +80,6 @@ h3 {
     line-height: normal;
     text-align: center;
     margin-bottom: 4vw;
-
 }
 
 .container {

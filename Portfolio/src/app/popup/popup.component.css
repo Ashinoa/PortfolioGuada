@@ -76,14 +76,14 @@ h3 {
   width: 462px;
   height: 667px;
   position: absolute;
-  bottom: -75px;
+  bottom: -290px;
   left: -290px;
   text-align: center;
 }
 
 .image-project {
-  width: 75%;
-  height: 100%;
+  width: 100%;
+  height: auto;
   image-rendering: -webkit-optimize-contrast;
 }
 
@@ -122,4 +122,12 @@ p {
   text-align: center;
   margin-top: 15px;
 
+}
+
+
+
+@media (max-width: 1239px) {
+  .container-projectImage {
+    display: none;
+  }
 }

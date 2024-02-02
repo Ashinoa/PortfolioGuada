@@ -1,9 +1,8 @@
-
 .skills {
     margin: 5vw 5vw 15vw 5vw;
 }
 
-#container-skills{
+#container-skills {
     margin-top: 5vw;
 }
 
@@ -16,3 +15,10 @@
     max-height: 800px;
 }
 
+
+@media (max-width: 667px) {
+    .skills .container .code img {
+        min-height: 53vw;
+        margin-right: 10vw;
+    }
+}
