@@ -31,12 +31,12 @@ footer{
         box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
         cursor: pointer;
     }
-
-    &:disabled {
-        background: var(--gradient-disabled);
-        color: var(--campos);
-    }
 }
+
+/*
+:host ::ng-deep .pi{
+    
+}*/
 
 .footer {
     background: var(--gradient-green);
@@ -60,7 +60,6 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    /* Alinear botones en la parte inferior */
     align-items: center;
     position: absolute;
     bottom: 0;

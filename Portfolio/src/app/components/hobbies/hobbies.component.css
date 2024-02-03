@@ -1,28 +1,68 @@
-
-
 .hobbies {
     margin: 5vw;
 }
 
-#container-hobbies{
-   margin: 10vw 0 0 0;
+#container-hobbies {
+    margin: 10vw 0 0 0;
 }
 
 
-.hobbies p{
+.hobbies p {
     font-size: var(--font-size-title3);
     font-style: normal;
     line-height: normal;
     text-align: center;
-    margin: 2vw 0 0 0 ;
+    margin: 2vw 0 0 0;
 }
 
 
 @media (max-width: 1024px) {
-    #container-hobbies{
+    #container-hobbies {
         flex-direction: column;
     }
-    .programming, .kickboxing{
-        margin-top:10vw ;
+
+    .programming,
+    .kickboxing {
+        margin-top: 10vw;
     }
-  }
+    .container .kickboxing img{
+        margin-left: 2.5vw;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container .draw img {
+        height: 30vw;
+    }
+    .container .programming img {
+        height: 30vw;
+    }
+    .container .kickboxing img {
+        height: 30vw;
+        margin-right: 2.5vw;
+        margin-left: 0px;
+    }
+    .hobbies p {
+        font-size: var(--font-size-title5);
+    }
+}
+
+@media (max-width: 550px) {
+
+    .container .draw img {
+        height: 20vw;
+    }
+    .container .programming img {
+        height: 20vw;
+    }
+    .container .kickboxing img {
+        height: 20vw;
+        margin-right:5.5vw;
+    }
+    .hobbies p {
+        font: inherit;
+        vertical-align: baseline;
+        font-size: var(--font-size-title6);
+    }
+}
