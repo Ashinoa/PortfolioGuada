@@ -1,6 +1,7 @@
-footer{
+footer {
     margin: 20vw 0 0 0;
 }
+
 .container-links-footer p {
     margin: 20px;
     margin-top: 1rem;
@@ -19,9 +20,9 @@ footer{
 }
 
 .footerIcon {
-    width: 3vw;
-    height: 3vw;
-    border-radius: 10px;
+    width: 4vw ;
+    height: 4vw;
+    border-radius: 5vw;
     background: var(--gradient-pink);
     color: var(--font-color-light);
     border: none;
@@ -33,10 +34,6 @@ footer{
     }
 }
 
-/*
-:host ::ng-deep .pi{
-    
-}*/
 
 .footer {
     background: var(--gradient-green);
@@ -65,4 +62,30 @@ footer{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 900px) {
+    :host ::ng-deep .pi {
+        font-size: 2vw;
+    }
+
+    :host ::ng-deep .p-icon {
+        width: 2vw;
+        height: 2vw;
+    }
+
+
+}
+
+@media (max-width: 550px) {
+
+    .footerIcon {
+        border-radius: 5vw;
+        min-width: 30px;
+        min-height: 30px;
+    }
+    :host ::ng-deep .pi {
+        font-size: 13px;
+    }
+
 }
