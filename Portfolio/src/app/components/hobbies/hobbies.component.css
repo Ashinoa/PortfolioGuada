@@ -25,13 +25,6 @@
     .kickboxing {
         margin-top: 10vw;
     }
-    .container .kickboxing img{
-        margin-left: 2.5vw;
-    }
-}
-
-@media (max-width: 900px) {
-
     .container .draw img {
         height: 30vw;
     }
@@ -40,13 +33,26 @@
     }
     .container .kickboxing img {
         height: 30vw;
-        margin-right: 2.5vw;
-        margin-left: 0px;
     }
+
+}
+ /*
+@media (max-width: 900px) {
+
+   .container .draw img {
+        height: 30vw;
+    }
+    .container .programming img {
+        height: 30vw;
+    }
+    .container .kickboxing img {
+        height: 30vw;
+    }
+    
     .hobbies p {
         font-size: var(--font-size-title5);
     }
-}
+}*/
 
 @media (max-width: 550px) {
 
@@ -58,7 +64,7 @@
     }
     .container .kickboxing img {
         height: 20vw;
-        margin-right:5.5vw;
+      
     }
     .hobbies p {
         font: inherit;

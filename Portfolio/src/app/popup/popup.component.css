@@ -74,9 +74,9 @@ h3 {
 
 .container-projectImage {
   width: 462px;
-  height: 667px;
+
   position: absolute;
-  bottom: -290px;
+  bottom: 100px;
   left: -290px;
   text-align: center;
 }

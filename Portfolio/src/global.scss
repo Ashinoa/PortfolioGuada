@@ -37,6 +37,7 @@
     --font-size-link: 0.875rem;
     /*14px*/
 }
+
 /*42561324*/
 html,
 body {
@@ -48,7 +49,7 @@ body {
     overflow-y: scroll;
     scrollbar-width: none;
     scrollbar-color: transparent transparent;
-    min-width: 300px;
+    min-width: 300px; 
 }
 
 body::-webkit-scrollbar {

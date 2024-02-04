@@ -3,13 +3,11 @@
     <div class="container-popup-opened" tabindex="-1" style="width: 670px; height: auto;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; overflow: visible;" (click)="stopPropagation($event)">
         <div class="container-image-popup" style="overflow: auto; width: 581px; height: 487px;">
             <div class="popup-container" >
-    
-                <div class="container-projectImage">
-                    <!--<img class="image-project" width="90vw" height="90vw" [src]="projectMediaUrl">-->
-                    <video class="image-project" autoplay muted loop controlsList="nodownload">>
-                        <source [src]="projectMediaUrl" type="video/mp4">
-                        <!--Cargar video-->
-                    </video>
+                <div class="container-projectImage">                    
+                        <video class="image-project" autoplay muted loop controlsList="nodownload">
+                            <source [src]="projectMediaUrl" type="video/mp4">
+                        </video>
+                    
                 </div>
                 
                 <div class="container-description-div1" style="height: 160px; position: relative; overflow: visible;">
