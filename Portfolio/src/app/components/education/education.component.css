@@ -52,3 +52,16 @@
         margin-top: 10vw;
     }
 }
+@media (max-width: 550px) {
+    .container-education .uiUxDesign {
+        margin-top: 15vw;
+    }
+}
+@media (max-width: 400px) {
+    .background-Education {
+       background: none;
+    }
+    .container-education p{
+        color: black;
+    }
+}
