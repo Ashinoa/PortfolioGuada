@@ -3,18 +3,27 @@
     <div class="container-projects">
         <div class="dimaia-project">
             <img id="spinDimaia-img" src="assets/spinDimaia.svg" alt="spinDimaia" (click)="showDescription('dimaia')">
-            <p>DIMAIA</p>
+            <div id="dimaia-name">
+                <p (click)="showDescription('dimaia')">DIMAIA</p>
+            </div>
+            
         </div>
 
 
         <div class="donar-project">
             <img id="donar-img" src="assets/Donar.svg" alt="Descripcion" (click)="showDescription('donar')">
-            <P>DONA+</P>
+           <div id="donar-name">
+            <P (click)="showDescription('donar')">DONA+</P>
+           </div>
+           
 
         </div>
         <div class="stylebus-project" id="styleBus-div">
             <img id="styleBus-img" src="assets/StyleBusSinFondo.svg" alt="Descripcion" (click)="showDescription('stylebus')">
-            <p>StyleBus</p>
+            <div id="stylebus-name">
+                <p (click)="showDescription('stylebus')">StyleBus</p>
+            </div>
+            
         </div>
 
     </div>

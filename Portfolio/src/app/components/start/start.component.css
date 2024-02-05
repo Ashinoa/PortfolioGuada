@@ -13,6 +13,9 @@
     font-style: normal;
     line-height: normal;
     text-align: center;
+    color: var(--font-color-light);
+    border: 0;
+    vertical-align: baseline;
 }
 
 .photography img {
@@ -63,6 +66,13 @@
 }
 
 
+@media (max-width: 1400px) {
+    .title h1 {
+        font-size:var(--font-size-title1) ;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .title h1 {
         font: inherit;
@@ -75,4 +85,18 @@
         font-size: var(--font-size-title6);
     }
 
+}
+
+
+@media (max-width: 900px) {
+    .title h1 {
+        font-size:var(--font-size-title4) ;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .title h1{
+        font-size: initial;
+    }
 }

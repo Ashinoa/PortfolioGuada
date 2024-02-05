@@ -27,12 +27,14 @@ h3 {
   display: none;
   z-index: 8010;
   overflow: auto;
+ 
 }
 
 .popup-overlay-fixed {
   position: fixed;
   bottom: 0;
   right: 0;
+  
 }
 
 .container-popup-opened {
@@ -42,7 +44,6 @@ h3 {
   border: 0;
   outline: none;
   vertical-align: top;
-
 }
 
 
