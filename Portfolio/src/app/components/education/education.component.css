@@ -46,6 +46,16 @@
     margin: 0px;
 }
 
+@media (min-width: 1533px) {
+    .container-education{
+        flex-direction: column;
+    }
+
+    /*.container-education p {
+        color: var(--font-color-dark);
+    }*/
+}
+
 @media (max-width: 1245px) {
     .container-education .uiUxDesign {
         margin-top: 10vw;

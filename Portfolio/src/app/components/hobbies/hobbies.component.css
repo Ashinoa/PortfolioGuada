@@ -26,13 +26,13 @@
         margin-top: 10vw;
     }
     .container .draw img {
-        height: 30vw;
+        height: 40vw;
     }
     .container .programming img {
-        height: 30vw;
+        height: 40vw;
     }
     .container .kickboxing img {
-        height: 30vw;
+        height: 40vw;
     }
 
 }
@@ -57,13 +57,13 @@
 @media (max-width: 550px) {
 
     .container .draw img {
-        height: 20vw;
+        height: 40vw;
     }
     .container .programming img {
-        height: 20vw;
+        height: 40vw;
     }
     .container .kickboxing img {
-        height: 20vw;
+        height: 40vw;
       
     }
     .hobbies p {
