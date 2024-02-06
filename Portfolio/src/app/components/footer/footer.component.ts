@@ -15,7 +15,7 @@ export class FooterComponent {
     if (page === 'github') {
       window.location.href = 'https://github.com/Ashinoa'; // O utiliza this.router.navigate si estás manejando rutas internas de Angular
     }else if(page === 'linkedin'){
-      window.location.href = 'https://www.linkedin.com';
+      window.location.href = 'https://www.linkedin.com/in/guadalupe-arroyo-610593267/';
     }else{
       window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=guadalupenicolearroyo@gmail.com';
     }
