@@ -1,7 +1,7 @@
-<div class="container-sidebar">
-    <div class="menu">
+<div class="container-sidebar" [ngClass]="{'sidebar-expanded': sidebarExpanded}">
+    <div class="menu" >
         <button class="item" style="color: white; background-color: rgb(199 65 143);"
-            (click)="slowScroll('start')">Inicio</button>
+            (click)="slowScroll('start')">Perfil</button>
         <button class="item" style="color: white; background-color: rgb(255, 184, 39);"
             (click)="slowScroll('projects')">Proyectos</button>
         <button class="item" style="color: white; background-color: rgb(126 49 199);"
@@ -10,7 +10,8 @@
             (click)="slowScroll('education')">Educación</button>
         <button class="item" style="color: white; background-color: rgb(237, 109, 123);"
             (click)="slowScroll('hobbies')">Hobbies</button>
-
     </div>
 
 </div>
+
+<button *ngIf="showMenuButton" class="menu-toggle" [ngClass]="{'menu-active': sidebarExpanded}" (click)="toggleSidebar()"><img src="assets/imgIcono.svg" alt="" width="36" height="36"></button>

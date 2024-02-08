@@ -5,7 +5,7 @@
 
 }
 
-.fondoTop{
+.backgroundTop{
     background: url('/assets/fondoFullStart.svg') no-repeat;
     margin: 0px ;
     background-size: 100%;
@@ -13,9 +13,4 @@
     background-position-y: -10vw;
 }
 
-@media (max-width: 1024px) {
- .sidebar{
-    display: none;
- }   
-}
 

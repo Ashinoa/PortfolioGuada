@@ -20,7 +20,6 @@ import { StartComponent } from './components/start/start.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

@@ -74,7 +74,6 @@ p {
 
 }
 
-
 h3 {
     font-size: var(--font-size-title1);
     font-style: normal;
@@ -227,4 +226,17 @@ h3 {
             var(--font-size-paragraph4)
             /*max=16px*/
         );
+}
+
+@media (min-width: 2560px) {
+    h3{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 426px) {
+    h3{
+       font-size: var(--font-size-title2);
+
+    }
 }

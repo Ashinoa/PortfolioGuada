@@ -62,3 +62,45 @@
 *:focus {
     outline: none;
 }
+
+@media (max-width: 1024px) {
+    .container-sidebar {
+        display: none;
+    }
+
+    .sidebar-expanded {
+        display: flex;
+    }
+
+    .menu-toggle {
+        position: fixed;
+        top: 45%;
+        right: 0;
+        background-color: transparent;
+        border: none;
+        z-index: 100;   
+    }
+    .menu-active{
+        left: 0;
+        right: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .container-sidebar .menu .item {
+        width: 209px;
+        font-size: var(--font-size-link);
+        height: 30px;
+    }
+    
+}
+
+@media (min-width: 2560px) {
+    .container-sidebar .menu .item {
+        width: 295px;
+        font-size: var(--font-size-paragraph2);
+        height: 50px;
+    }
+    .container-sidebar .menu{
+        gap:30px;
+    }
+}

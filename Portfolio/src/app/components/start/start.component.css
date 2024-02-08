@@ -65,6 +65,16 @@
     margin: 5vw 5vw 3vw 5vw;
 }
 
+@media (min-width: 2560px) {
+    :host::ng-deep .p-button-global{
+        font-size: 1.5rem;
+        width: 358px;
+        height: 80px;
+    }
+    .aboutMe p {
+        font-size: var(--font-size-title2);
+    }
+}
 
 @media (max-width: 1400px) {
     .title h1 {
@@ -91,6 +101,14 @@
 @media (max-width: 900px) {
     .title h1 {
         font-size:var(--font-size-title4) ;
+    }
+}
+@media (max-width: 426px) {
+    .photography img {
+        height: 25vw;
+        width: 25vw;
+        min-width: 200px;
+        min-height: 170px;
     }
 }
 

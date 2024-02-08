@@ -68,12 +68,9 @@ footer {
         width: 2vw;
         height: 2vw;
     }
-
-
 }
 
 @media (max-width: 550px) {
-
     .footerIcon {
         border-radius: 5vw;
         min-width: 30px;
@@ -83,4 +80,16 @@ footer {
         font-size: 13px;
     }
 
+}
+
+@media (min-width: 1400px) {
+    :host ::ng-deep .pi {
+        font-size: 250%;
+    }
+
+}
+@media (min-width: 2560px) {
+    :host ::ng-deep .pi {
+        font-size: 350%;
+    }
 }

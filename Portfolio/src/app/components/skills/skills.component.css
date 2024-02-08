@@ -10,15 +10,19 @@
     height: 30vw;
     width: 30vw;
     min-width: 300px;
-    min-height: 250px;
+    min-height: 300px;
     max-width: 900px;
     max-height: 800px;
 }
 
 
 @media (max-width: 667px) {
-    .skills .container .code img {
-        min-height: 53vw;
-        margin-right: 10vw;
+    .container{
+        justify-content: center;
+    }
+    .skills .container .design img{
+        min-width: 250px;
+        min-height: 250px;
+        margin-left: 10vw;
     }
 }

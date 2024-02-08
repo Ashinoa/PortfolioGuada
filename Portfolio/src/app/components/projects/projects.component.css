@@ -36,17 +36,6 @@
     color: white;
 }
 
-
-#spinDimaia-img{
-    background: var(--gradient-pink);
-    border-radius: 250px;
-    margin: 0;
-    padding: 0;
-    min-width: 200px;
-    min-height: 200px;
-   
-}
-
 #spinDimaia-img:hover{
     transform: scale(1.1);
     cursor: pointer;
@@ -62,12 +51,14 @@
     cursor: pointer;
 }
 
-.container-projects #dimaia-name{
-    background: url('/assets/dimaiaProjectRectangulo.svg') no-repeat;
+#dimaia-name{
+    background: #E62D9C;
+    border-radius: 50px;
     padding: 0px;
     margin: 0px;
     background-position: center;
     transition: transform 0.3s ease-out;
+    
 }
 
 #dimaia-name:hover{
@@ -75,8 +66,9 @@
     cursor: pointer;
 }
 
-.container-projects #donar-name{
-    background: url('/assets/donarProjectRectangulo.svg') no-repeat;
+#donar-name{
+    background: #ED6D7B;
+    border-radius: 50px;
     padding: 0px;
     margin: 0px;
     background-position: center;
@@ -88,8 +80,9 @@
     cursor: pointer;
 }
 
-.container-projects #stylebus-name{
-    background: url('/assets/stylebusProjectRectangulo.svg') no-repeat;
+#stylebus-name{
+    background: #FFB827;
+    border-radius: 50px;
     padding: 0px;
     margin: 0px;
     background-position: center;
@@ -98,4 +91,20 @@
 #stylebus-name:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .projects .container-projects img{
+        width: 10vw;
+        height: 10vw;
+        min-width: 100px;
+        min-height: 100px;
+    }
+    #spinDimaia-img{
+        min-width: 100px;
+        min-height: 100px;
+    }
+    .container-projects p{
+        font-size: var(--font-size-title6);
+    }
 }

@@ -50,11 +50,17 @@
     .container-education{
         flex-direction: column;
     }
-
-    /*.container-education p {
-        color: var(--font-color-dark);
-    }*/
 }
+
+@media (min-width: 2560px) {
+    .container-education p {
+        font-size: var(--font-size-title4);
+    }
+    .container-education .subTitle {
+        font-size: var(--font-size-title2);
+    }
+}
+
 
 @media (max-width: 1245px) {
     .container-education .uiUxDesign {
