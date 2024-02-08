@@ -22,7 +22,7 @@ export class StartComponent {
 
   downloadCV(): void {
     // Ruta relativa al archivo PDF en la carpeta 'assets'
-    const rutaPDF = './assets/CVRosa.pdf';
+    const rutaPDF = './assets/CVGuada.pdf';
 
     // Obtén la ruta completa del archivo PDF usando el servicio HttpClient
     this.httpClient.get(rutaPDF, { responseType: 'blob' }).subscribe((data: Blob) => {
